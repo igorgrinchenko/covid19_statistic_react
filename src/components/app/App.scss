@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.App {
+  transition: all 0.2s;
+  &.darkMode {
+    background-color: black;
+    transition: all 0.2s;
+  }
+}
+
+.container {
+  max-width: 1440px;
+  height: 100vh;
+  margin: 0 auto;
+}

@@ -1,0 +1,40 @@
+.info-page {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.info-list {
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 50px;
+  &.darkMode {
+    color: white;
+  }
+  li {
+    margin-top: 20px;
+  }
+}
+
+.error-info {
+  margin-top: 70px;
+  font-weight: 300;
+  &.darkMode {
+    color: white;
+  }
+}
+
+.button-wrapper {
+  margin-top: 20px;
+}
+
+.link {
+  color: black;
+  &.darkMode {
+    color: white;
+    &:hover {
+      border-bottom: 1px solid white;
+    }
+  }
+}
