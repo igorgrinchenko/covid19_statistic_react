@@ -11,22 +11,20 @@ import LanguageModal from "../../components/modal/LanguageModal";
 
 import "./App.scss";
 
-const App = ({ isDark }) => {
-  return (
-    <div className={cn("App", { darkMode: isDark })}>
-      <div className="container">
-        <Header />
-        <LanguageModal />
-        <Routes>
-          <Route exact path="/" element={<HomePage />} />
-          <Route path="/homepage" element={<HomePage />} />
-          <Route path="/info" element={<InfoPage />} />
-          <Route path="/articles" element={<Article />} />
-        </Routes>
-      </div>
+const App = ({ isDark }) => (
+  <div className={cn("App", { darkMode: isDark })}>
+    <div className="container">
+      <Header />
+      <LanguageModal />
+      <Routes>
+        <Route exact path="/" element={<HomePage />} />
+        <Route path="/homepage" element={<HomePage />} />
+        <Route path="/info" element={<InfoPage />} />
+        <Route path="/articles" element={<Article />} />
+      </Routes>
     </div>
-  );
-};
+  </div>
+);
 
 const mapStateToProps = (state) => ({
   isDark: state.isDark,

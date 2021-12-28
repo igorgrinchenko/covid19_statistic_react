@@ -4,13 +4,11 @@ import cn from "classnames";
 import { welcome } from "../../constants/constants";
 import "./HomePage.scss";
 
-const HomePage = ({ isDark }) => {
-  return (
-    <div className={cn("home-page", { darkMode: isDark })}>
-      <h1>{welcome}</h1>
-    </div>
-  );
-};
+const HomePage = ({ isDark }) => (
+  <div className={cn("home-page", { darkMode: isDark })}>
+    <h1>{welcome}</h1>
+  </div>
+);
 
 const mapStateToProps = (state) => ({
   isDark: state.isDark,

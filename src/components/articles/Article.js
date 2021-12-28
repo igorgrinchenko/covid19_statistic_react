@@ -5,15 +5,11 @@ import { hereWillBeArticles } from "../../constants/constants";
 
 import "./Article.scss";
 
-const Article = ({ isDark }) => {
-  return (
-    <>
-      <h2 className={cn("article-info", { darkMode: isDark })}>
-        {hereWillBeArticles}
-      </h2>
-    </>
-  );
-};
+const Article = ({ isDark }) => (
+  <h2 className={cn("article-info", { darkMode: isDark })}>
+    {hereWillBeArticles}
+  </h2>
+);
 
 const mapStateToProps = (state) => ({
   isDark: state.isDark,

@@ -11,20 +11,15 @@ const InfoList = ({
   critical,
   deaths,
   isDark,
-}) => {
-  return (
-    <>
-      <ul className={cn("info-list", { darkMode: isDark })}>
-        <li>Country: {country}</li>
-        <li>Confirmed: {confirmed}</li>
-        <li>Recovered: {recovered}</li>
-        <li>Critical: {critical}</li>
-        <li>Deaths: {deaths}</li>
-      </ul>
-    </>
-  );
-};
-
+}) => (
+  <ul className={cn("info-list", { darkMode: isDark })}>
+    <li>Country: {country}</li>
+    <li>Confirmed: {confirmed}</li>
+    <li>Recovered: {recovered}</li>
+    <li>Critical: {critical}</li>
+    <li>Deaths: {deaths}</li>
+  </ul>
+);
 const mapStateToProps = (state) => ({
   country: state.country,
   confirmed: state.confirmed,

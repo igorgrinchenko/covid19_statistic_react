@@ -34,7 +34,7 @@ const SearchField = ({ getLatestCountryDataByName, isDark }) => {
   }, [isDark]);
 
   return (
-    <div>
+    <>
       <Input
         inputRef={input}
         className={cn("input", { darkMode: isDark })}
@@ -42,7 +42,7 @@ const SearchField = ({ getLatestCountryDataByName, isDark }) => {
         onKeyDown={getCountryValue}
         placeholder={enterCountryForGettingInfo}
       />
-    </div>
+    </>
   );
 };
 
