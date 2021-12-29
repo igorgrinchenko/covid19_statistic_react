@@ -31,8 +31,8 @@ const ErrorInfo = ({ errorMessage, isDark }) => {
   );
 };
 
-const mapStateToProps = (state) => ({
-  isDark: state.isDark,
+const mapStateToProps = ({ isDark }) => ({
+  isDark,
 });
 
 export default connect(mapStateToProps)(ErrorInfo);

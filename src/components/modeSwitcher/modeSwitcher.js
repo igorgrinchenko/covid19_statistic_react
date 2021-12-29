@@ -23,8 +23,8 @@ const CustomizedSwitches = ({ setIsDark, isDark }) => (
   </FormGroup>
 );
 
-const mapStateToProps = (state) => ({
-  isDark: state.isDark,
+const mapStateToProps = ({ isDark }) => ({
+  isDark,
 });
 
 const mapDispatchToProps = {

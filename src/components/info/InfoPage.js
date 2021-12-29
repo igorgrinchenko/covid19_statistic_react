@@ -93,10 +93,10 @@ const InfoPage = ({
   );
 };
 
-const mapStateToProps = (state) => ({
-  isData: state.isData,
-  isLoader: state.isLoader,
-  errorMessage: state.errorMessage,
+const mapStateToProps = ({ isData, isLoader, errorMessage }) => ({
+  isData,
+  isLoader,
+  errorMessage,
 });
 
 const mapDispatchToProps = {

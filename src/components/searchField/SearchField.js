@@ -1,5 +1,4 @@
-import React from "react";
-import { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Input } from "@mui/material";
 import { connect } from "react-redux";
 import cn from "classnames";
@@ -34,20 +33,18 @@ const SearchField = ({ getLatestCountryDataByName, isDark }) => {
   }, [isDark]);
 
   return (
-    <>
-      <Input
-        inputRef={input}
-        className={cn("input", { darkMode: isDark })}
-        onChange={setCountryValue}
-        onKeyDown={getCountryValue}
-        placeholder={enterCountryForGettingInfo}
-      />
-    </>
+    <Input
+      inputRef={input}
+      className={cn("input", { darkMode: isDark })}
+      onChange={setCountryValue}
+      onKeyDown={getCountryValue}
+      placeholder={enterCountryForGettingInfo}
+    />
   );
 };
 
-const mapStateToProps = (state) => ({
-  isDark: state.isDark,
+const mapStateToProps = ({ isDark }) => ({
+  isDark,
 });
 
 export default connect(mapStateToProps)(SearchField);

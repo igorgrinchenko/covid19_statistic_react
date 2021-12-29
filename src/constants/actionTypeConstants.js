@@ -1,0 +1,10 @@
+export const SET_COUNTRY = "SET_COUNTRY";
+export const SET_CODE = "SET_CODE";
+export const SET_CONFIRMED_VALUE = "SET_CONFIRMED_VALUE";
+export const SET_RECOVERED_VALUE = "SET_RECOVERED_VALUE";
+export const SET_CRITICAL_VALUE = "SET_CRITICAL_VALUE";
+export const SET_DEATHS_VALUE = "SET_DEATHS_VALUE";
+export const SET_IS_DATA = "SET_IS_DATA";
+export const SET_IS_LOADER = "SET_IS_LOADER";
+export const SET_ERROR_MESSAGE = "SET_ERROR_MESSAGE";
+export const SET_IS_DARK = "SET_IS_DARK";

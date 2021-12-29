@@ -11,8 +11,8 @@ const Article = ({ isDark }) => (
   </h2>
 );
 
-const mapStateToProps = (state) => ({
-  isDark: state.isDark,
+const mapStateToProps = ({ isDark }) => ({
+  isDark,
 });
 
 export default connect(mapStateToProps)(Article);

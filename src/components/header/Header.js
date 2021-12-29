@@ -31,8 +31,8 @@ const Header = ({ isDark }) => (
   </div>
 );
 
-const mapStateToProps = (state) => ({
-  isDark: state.isDark,
+const mapStateToProps = ({ isDark }) => ({
+  isDark,
 });
 
 export default connect(mapStateToProps)(Header);
